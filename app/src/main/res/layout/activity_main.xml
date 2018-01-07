@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hacky_laptop.helloandroid.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <ImageView
+            android:id="@+id/udacitylogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:src="@drawable/udacity2"
+
+            />
+
+
+        <ImageView
+            android:id="@+id/home"
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:layout_centerVertical="true"
+
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/home1"
+
+
+            />
+
+
+        <TextView
+            android:id="@+id/udacitytext"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/home"
+            android:fontFamily="@font/original"
+
+            android:paddingLeft="20dp"
+
+            android:text="@string/Udacity"
+            android:textColor="@color/Grey"
+            android:textSize="25sp"
+
+            />
+
+        <ImageView
+
+            android:id="@+id/phone"
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:layout_below="@+id/home"
+
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+
+            android:src="@drawable/phone2" />
+
+        <TextView
+            android:id="@+id/phonetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/home"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/phone"
+            android:fontFamily="@font/original"
+
+            android:autoLink="phone"
+            android:clickable="true"
+
+            android:paddingLeft="20dp"
+            android:text="@string/phoneNumber"
+
+            android:textColor="@color/Grey"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/website"
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:layout_below="@+id/phone"
+
+            android:layout_marginLeft="27dp"
+
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/textView"
+            android:layout_toStartOf="@+id/textView"
+            android:src="@drawable/web2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/phone"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/website"
+            android:fontFamily="@font/original"
+
+            android:autoLink="all"
+            android:clickable="true"
+
+            android:paddingLeft="20dp"
+            android:text="@string/udacitywebsite"
+
+            android:textColor="@color/Grey"
+            android:textSize="20sp"
+
+
+            />
+
+        <ImageView
+            android:id="@+id/map"
+
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+
+            android:layout_below="@+id/website"
+
+            android:layout_marginLeft="25dp"
+
+            android:layout_marginTop="5dp"
+            android:src="@drawable/location"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/website"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:layout_toEndOf="@+id/map"
+
+            android:layout_toRightOf="@+id/map"
+            android:fontFamily="@font/original"
+
+            android:paddingLeft="20dp"
+            android:text="@string/Adress"
+            android:textColor="@color/Grey"
+            android:textSize="17sp"
+            android:id="@+id/textView"
+
+            android:clickable="true"
+            android:autoLink="map"
+            />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
